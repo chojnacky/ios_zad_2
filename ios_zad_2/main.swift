@@ -9,8 +9,8 @@
 import Foundation
 
 func getAccountNumber(accountNumber:String?){
-    //sprawdzenie czy kod ma 16 cyfr
-    if(accountNumber?.count != 16){
+    //sprawdzenie czy kod ma 24 cyfr
+    if(accountNumber?.count != 24){
         print("Wrong bank account number.")
         return
     }
