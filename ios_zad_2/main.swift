@@ -20,7 +20,6 @@ class Bank_Account{
 }
 
 func getAccountNumber(accountNumber:String) -> Bank_Account? {
-    //sprawdzenie czy kod ma 26 cyfr
     var countNumber:Int = 0
     var accountNumberTemp:String = ""
     //counting numbers in accountNumber
@@ -31,6 +30,7 @@ func getAccountNumber(accountNumber:String) -> Bank_Account? {
             accountNumberTemp.append(character)
         }
     }
+    //checking if inputed string has 26 numbers
     if countNumber != 26{
         return nil
     }
