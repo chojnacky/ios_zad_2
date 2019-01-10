@@ -8,5 +8,18 @@
 
 import Foundation
 
-print("Hello, World!")
+func getAccountNumber(accountNumber:String?){
+    //sprawdzenie czy kod ma 16 cyfr
+    if(accountNumber?.count != 16){
+        print("Wrong bank account number.")
+        return
+    }
+    print("Right bank account number")
+}
 
+print("Insert bank account number: ")
+if let number:String = readLine(){
+    getAccountNumber(accountNumber:number)
+} else {
+    print("Error")
+}
