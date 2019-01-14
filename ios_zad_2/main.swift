@@ -19,7 +19,7 @@ class Bank_Account{
     }
 }
 
-func getAccountNumber(accountNumber:String) -> Bank_Account? {
+func getAccountNumber(accountNumber:String) -> Bank_Account! {
     var countNumber:Int = 0
     var accountNumberTemp:String = ""
     //counting numbers in accountNumber
@@ -93,3 +93,4 @@ if let number:String = readLine() {
 } else {
     print("Error")
 }
+
