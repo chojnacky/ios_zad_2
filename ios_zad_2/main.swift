@@ -5,7 +5,6 @@
 //  Created by Karol Chojnacki on 10/01/2019.
 //  Copyright © 2019 Karol Chojnacki. All rights reserved.
 //
-
 import Foundation
 
 class Bank_Account{
@@ -24,7 +23,7 @@ func getAccountNumber(accountNumber:String) -> Bank_Account! {
     var accountNumberTemp:String = ""
     //counting numbers in accountNumber
     for character in accountNumber{
-        if (character != " "){
+        if (character <= "9" && character >= "0"){
             countNumber+=1
             //adding every number to new variable for easier detecting bankID
             accountNumberTemp.append(character)
@@ -93,4 +92,3 @@ if let number:String = readLine() {
 } else {
     print("Error")
 }
-
